@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+html {
+	height: 100%;
+}
+body {
+	/*font-family: 'Lily Script One', cursive;*/
+	/*font-family: 'Titillium Web', sans-serif;*/
+	font-family: "soleil", sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family:  "ubuntu",montserrat, arial, verdana;*/
+	min-width:1200px; 
+}
+#navWrapper {
+	height:100px;
+	box-sizing: border-box;
+	/*color: white;*/
+	background-color: #449BB5;
+	text-transform: uppercase;
+	-webkit-font-smoothing:antialiased;
+	padding: 0;
+	margin: 0;
+}
+nav h2 {
+	display: inline-block;
+	/*background-color: red;*/
+	/*margin: 10px;*/
+	padding: 30px;
+}
+nav ul{
+	float :right;
+	padding-right: 100px;
+}
+nav ul li {
+	list-style-type: none;
+	float: left;
+	padding:20px;
+	margin-top: 20px;
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	-webkit-font-smoothing:antialiased;
+}
+#search_div {
+	position: relative;
+	/*padding: 10px;*/
+    /*width: 30px;*/
+    height:30px;
+}
+#search_div:hover #search_input {
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+}
+#search_form {
+	margin-top: -8px;
+}
+#search_input {
+	width: 30px;
+	position: relative;
+	border-radius: 15px;
+	border: 1px solid #666;
+	height: 30px;
+	z-index: 1;
+	background-color: #4d4d4d;
+	-webkit-transition: all 300ms ease-in-out;
+	/*background-image: url("../images/search-dark2.png");*/
+	/*background: url(../../images/search-dark2.png) no-repeat 5px 5px #4d4d4d;*/
+} 
+#search_input:hover, #search_input:focus,#search_submit:hover #search_input {
+	width: 200px;
+	height: 30px;
+	padding-left: 10px;
+	/*background: url(../../images/search-dark2.png) no-repeat 185px 5px #4d4d4d;*/
+}
+#search_submit {
+	position: absolute;
+	top:10px;
+	right: 4px;
+	/*float: right;*/
+	width: 19px;
+	height: 19px;
+	/*display: none;*/
+	/*margin-right: -20px;*/
+	/*margin-top: -10px;*/
+	z-index: 2;
+	color: transparent;
+	background: url(../../images/search-icon-white.png);
+	background-repeat: no-repeat;
+	border: 0px;
+	/*margin-left: 0;*/
+}
+#search_submit:hover {
+	cursor: pointer;
+}
